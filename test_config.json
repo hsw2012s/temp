@@ -1,0 +1,27 @@
+{
+    "input": {
+        "SamplingRate": 6145,
+        "T": 0.34,
+        "overlap_rate": 0.5,
+        "threshold_percent": 0.95,
+        "segment_length": 0.06,
+        "Maxfreq": 1500,
+        "totol_length": 2.67,
+        "test_size": 0.33,
+        "preprocessing": true,
+        "n_splits": 1,
+        "n_iter": 1,
+        "target_List": {
+            "Normal": 0,
+            "Rubbing": 1,
+            "Unbalance": 2,
+            "Misalignment": 3
+        },
+        "search": "random",
+        "model_path": "model.pkl"
+    },
+    "PCA": {
+        "selfeature": 3,
+        "svd_solver": "full"
+    }
+}

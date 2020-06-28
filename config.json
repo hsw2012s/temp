@@ -1,0 +1,54 @@
+{
+    "input": {
+        "input_excel_path": "Dataset\\dataset2\\TWF\\TWF_Label.xlsx",
+        "input_csv_path": "Dataset\\dataset2\\TWF\\*\\*.csv",
+        "target_List": {
+            "Normal": 0,
+            "Rubbing": 1,
+            "Unbalance": 2,
+            "Misalignment": 3
+        },
+        "threshold_percent": 0.1,
+        "overlap_rate": 0.5,
+        "segment_length": 0.06,
+        "SR": 6145,
+        "T": 0.34,
+        "Maxfreq": 1500,
+        "totol_length": 2.67,
+        "test_size": 0.33,
+        "model_path": "model.pkl"
+    },
+    "GA": {
+        "cv": 3,
+        "scoring": "accuracy",
+        "max_features": 3,
+        "n_population": 100,
+        "crossover_proba": 0.5,
+        "mutation_proba": 0.2,
+        "n_generations": 150,
+        "crossover_independent_proba": 0.5,
+        "mutation_independent_proba": 0.05,
+        "tournament_size": 3,
+        "n_gen_no_change": 10,
+        "caching": true
+    },
+    "SVM": {
+        "C": [
+            1,
+            1
+        ],
+        "gamma": [
+            1,
+            1
+        ],
+        "n_splits": 1,
+        "n_iter": 1,
+        "test_size": 0.33,
+        "search": "random",
+        "preprocessing": true
+    },
+    "PCA": {
+        "selfeature": 3,
+        "svd_solver": "full"
+    }
+}
